@@ -15,21 +15,21 @@ Response to most things will be a JSON response except for getting file and
 thumbnails.
 
 Project:
-List: curl --request GET localhost:5000/project
-Create: curl --request POST localhost:5000/project -F name="{NAME}"
-Get: curl --request GET localhost:5000/project/{ID}
-Update: curl --request PATCH localhost:5000/project -F id="{ID}" -F name="{NAME}"
-Delete: curl --request DELETE localhost:5000/project/{ID}
+1. List: curl --request GET localhost:5000/project
+2. Create: curl --request POST localhost:5000/project -F name="{NAME}"
+3. Get: curl --request GET localhost:5000/project/{ID}
+4. Update: curl --request PATCH localhost:5000/project -F id="{ID}" -F name="{NAME}"
+5. Delete: curl --request DELETE localhost:5000/project/{ID}
 
 Floorplan:
-List: curl --request GET localhost:5000/floorplan
-Create: curl --request POST localhost:5000/floorplan -F project_id="{ID}" -F original="@{FILEPATH}"
-Get: curl --request GET localhost:5000/floorplan/1
-Update: curl --request PATCH localhost:5000/floorplan -F id="{ID}" -F name="{NAME}" -F original="@{FILEPATH}"
-Delete: curl --request DELETE localhost:5000/floorplan/1
+1. List: curl --request GET localhost:5000/floorplan
+2. Create: curl --request POST localhost:5000/floorplan -F project_id="{ID}" -F original="@{FILEPATH}"
+3. Get: curl --request GET localhost:5000/floorplan/1
+4. Update: curl --request PATCH localhost:5000/floorplan -F id="{ID}" -F name="{NAME}" -F original="@{FILEPATH}"
+5. Delete: curl --request DELETE localhost:5000/floorplan/1
 
 File:
-Get: curl --request GET localhost:5000/floorplan/file/{FLOORPLAN_ID}
+1. Get: curl --request GET localhost:5000/floorplan/file/{FLOORPLAN_ID}
 
 Thumb
-Get: curl --request GET localhost:5000/floorplan/{FLOORPLAN_ID}/thumb/{THUMB_ID}
+1. Get: curl --request GET localhost:5000/floorplan/{FLOORPLAN_ID}/thumb/{THUMB_ID}
