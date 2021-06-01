@@ -1,5 +1,12 @@
 #Floorplan project.
 
+Requirements:
+1. Python3 with pip3.
+2. Use pip3 to install all requirements listed in requirements.txt.
+
+To Run: python3 main.py
+
+
 Allows for creating/listing/getting/updating/deleting of:
 1. Project
 2. Floorplan
